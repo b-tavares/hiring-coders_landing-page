@@ -1,26 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <title>Livraria  | Black Friday</title>
     <meta charset="UTF-8" />
-    <meta name="description" content="Promoções de Black Friday da livraria" />
+    <meta name="description" content="Página de promoções de Super Friday da Livraria Viés" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" type="text/css" href="estilos.css" />
-    <script type="text/javascript" src="script.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <script src="https://kit.fontawesome.com/34b28a0f13.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/contador.js"></script>
+    <title>Livraria Viela | Super Friday</title>
 </head>
 
 <body>
 
     <header>
-        <h1 class="Lojista">Black Friday 2021</h1>
+        <div>
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <div>
+            <h1>Livraria ● Viela</h1>
+        </div>
+        <div>
+            <i class="fas fa-shopping-cart fa-2x"></i>
+        </div>
     </header>
-    
- 
 
+    <section class="background-section section-container section-one">
+        <div class="bloco1">
+            <h2>Super <br/> Friday</h2>
+            <div class="sale">
+                <img src="assets/sale.png">
+            </div>
+        </div>
+        <div>
+            <h4>Faltam apenas:</h4>
+            <div class="bloco2" id="contador"></div>
+        </div>
+    </section>
+
+    <section class="background-section section-container section-two">
+        <h3>Confira alguns dos nossos produtos:</h3>
+    </section>
+
+    <section class="background-section section-container section-three">
+        <div class="produtos">
+            <img src="assets/produto_1.jpg">
+        </div>
+        <div class="produtos">
+            <img src="assets/produto_2.jpg">
+        </div>
+        <div class="produtos">
+            <img src="assets/produto_3.jpg">
+        </div>
+        <div class="produtos">
+            <img src="assets/produto_4.jpg">
+        </div>
+    </section>
+
+    <section class="background-section section-container section-four">
+            <div class="bloco8">
+                <h5>E aí, vai perder essa? Cadastre-se para receber nossas promoções em primeira mão!</h5><br/>
+                <h6>Não se preocupe, a gente também não gosta de spam por aqui. Só vamos falar com você caso encontremos algo interessante, combinado? ;)</h6>
+            </div>
+            <div id="content">
+                <form action="#" id="form" method="POST">
+                    <h4>Cadastro:</h4>
+                    <input type="text" name="nomeCliente" id="nomeCliente" placeholder="Digite seu nome">
+                    <input type="email" name="emailCliente" id="emailCliente" placeholder="Digite seu e-mail">
+                        <div class="genero">
+                            <input type="checkbox" id="genero1" name="genero1" value="Ficção literária">
+                            <label for="genero1">Ficção literária</label><br>
+                            <input type="checkbox" id="genero2" name="genero2" value="Não-ficção">
+                            <label for="genero2">Não-ficção</label><br>
+                            <input type="checkbox" id="genero3" name="genero3" value="Suspense">
+                            <label for="genero3">Suspense</label><br>
+                            <input type="checkbox" id="genero4" name="genero4" value="Ficção científica">
+                            <label for="genero4">Ficção científica</label><br>
+                            <input type="checkbox" id="genero5" name="genero5" value="Fantasia">
+                            <label for="genero5">Fantasia</label><br>
+                            <input type="checkbox" id="genero6" name="genero6" value="Horror">
+                            <label for="genero6">Horror</label><br>
+                            <input type="checkbox" id="genero7" name="genero7" value="Poesia">
+                            <label for="genero7">Poesia</label><br>
+                            <input type="checkbox" id="genero8" name="genero8" value="Romance">
+                            <label for="genero8">Romance</label><br>
+                        </div>
+                    <input type="submit" value="Me avise!" id="botao-enviar">
+                </form>
+            </div>
+    </section>
+
+    <footer>
+        <div class="bloco3">
+            <div>
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-facebook fa-2x"></i>
+            </div>
+        </div>
+        <div class="bloco3">
+            <p>Landing Page desenvolvida no programa Hiring Coders VTEX | Gama Academy por <a href="https://www.linkedin.com/in/barbara--tavares" target="_blank" style="text-decoration: none; color: inherit;"><i>Bárbara Tavares</i></a></p>
+        </div>
+    </footer>
 
 </body>
+<script type="text/javascript" src="js/script.js"></script>
 </html>
